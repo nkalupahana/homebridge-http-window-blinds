@@ -1,6 +1,6 @@
 {
-    "name": "homebridge-http-window-blinds",
-    "version": "2.4.0",
+    "name": "@nkalupahana/homebridge-http-window-blinds",
+    "version": "2.4.1",
     "description": "Homebridge Plugin for controlling window blinds over HTTP",
     "main": "index.js",
     "engines": {
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/crashtestoz/homebridge-http-window-blinds.git"
+        "url": "git+https://github.com/nkalupahana/homebridge-http-window-blinds.git"
     },
     "keywords": [
         "homebridge",
@@ -27,9 +27,9 @@
     "author": "Peter Chodyra",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/crashtestoz/homebridge-http-window-blinds/issues"
+        "url": "https://github.com/nkalupahana/homebridge-http-window-blinds/issues"
     },
-    "homepage": "https://github.com/crashtestoz/homebridge-http-window-blinds#readme",
+    "homepage": "https://github.com/nkalupahana/homebridge-http-window-blinds#readme",
     "dependencies": {
         "request": "^2.81.0"
     }

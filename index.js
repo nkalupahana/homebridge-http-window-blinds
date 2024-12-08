@@ -76,7 +76,7 @@ HttpWindowBlinds.prototype = {
 					
             			}
          		}
-			callback(error, this.currentPosition);
+			callback(error, this.currentPosition); // return early: https://github.com/homebridge/homebridge/wiki/Characteristic-Warnings#this-plugin-slows-down-homebridge
 		});	
 	},
 	getTargetPosition: function(callback){
@@ -101,8 +101,8 @@ HttpWindowBlinds.prototype = {
 			this.service.setCharacteristic(Characteristic.CurrentPosition, this.currentPosition);
 			this.service.setCharacteristic(Characteristic.PositionState, Characteristic.PositionState.STOPPED);
 			this.log("currentPosition is now %s", this.currentPosition);
-			callback(null);
 		});
+		callback(null);
 	},
 	getPositionState: function(callback) {
 		this.log("getPositionState :", this.positionState);
